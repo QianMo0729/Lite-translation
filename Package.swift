@@ -7,6 +7,8 @@ let package = Package(
     targets: [
         // Screen text recognition, context selection and the translation backends. No UI.
         .target(name: "LiteTranslationCore"),
+        // The menu bar app.
+        .executableTarget(name: "LiteTranslation", dependencies: ["LiteTranslationCore"]),
     ],
     swiftLanguageModes: [.v5]
 )
