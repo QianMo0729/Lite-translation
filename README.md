@@ -2,7 +2,9 @@
 
 macOS 菜单栏上的上下文翻译工具。选中一个词按 ⌥D，它会先看你屏幕上正在读的内容和所开 PDF 的全文，再给出贴合语境的翻译。全程在本机运行，不联网。
 
-*Context-aware translation for macOS. Select text, press ⌥D, and get a translation that fits what is on your screen and in the PDF you are reading. Fully on-device.*
+*Context-aware translation for macOS. Select text, press ⌥D, and get a translation that fits what is on your screen and in the PDF you are reading. Fully on-device. Requires macOS 27 or later on a Mac that supports Apple Intelligence.*
+
+> **使用前提**：只能在支持 Siri AI（Apple 智能）的 Mac 上使用，系统需要 macOS 27 或更高版本。详见[系统要求](#系统要求)。
 
 <img src="docs/panel.png" width="380" alt="翻译面板：STU 被译为“情境、任务和用户”，底部注明已参考窗口文字和文档全文">
 
@@ -29,8 +31,8 @@ macOS 菜单栏上的上下文翻译工具。选中一个词按 ⌥D，它会先
 
 ## 系统要求
 
-- macOS 26 或更高版本（目前只在 macOS 27 上测试过）
-- Apple 芯片的 Mac，并且已在系统设置中开启 Apple 智能
+- **支持 Siri AI（Apple 智能）的机型**：必须是搭载 Apple 芯片的 Mac，并且已在“系统设置 › Apple 智能与 Siri”里开启。翻译完全依赖这个系统自带的本机模型，在不支持或没有开启的 Mac 上无法使用。
+- **macOS 27 或更高版本**
 
 ## 安装
 
