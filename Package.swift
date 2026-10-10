@@ -9,6 +9,8 @@ let package = Package(
         .target(name: "LiteTranslationCore"),
         // The menu bar app.
         .executableTarget(name: "LiteTranslation", dependencies: ["LiteTranslationCore"]),
+        // Command-line check of the image -> context -> translation pipeline.
+        .executableTarget(name: "PipelineProbe", dependencies: ["LiteTranslationCore"]),
     ],
     swiftLanguageModes: [.v5]
 )
